@@ -15,7 +15,7 @@ public class JWTUtils {
 
     private final static String SECRET_KEY = "wSw3W3NU2c6cjogv6OaqvEtfJg8aF5D";
 
-    private final static long EXPIRATION_TIME = TimeUnit.MINUTES.toMillis(1);
+    private final static long EXPIRATION_TIME = TimeUnit.HOURS.toMillis(2);
 
     public static String tokenForUser(UserDB user) {
         Date now = new Date();
